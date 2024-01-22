@@ -1,4 +1,4 @@
-#include <stdio.h> // printf () iostream
+#include <stdio.h> // printf, scanf (iostream)
 #include <math.h> // all mathes functions
 
 double func(double x, double y) {
@@ -10,12 +10,14 @@ double func(double x, double y) {
 int main() {
     // std::cout -> printf
     // std::cin -> scanf
-    double x = 1, y;
+    double x, y;
 
-    printf("Enter x: \n\n");
-    printf("x = %lf, %lf\n", x, 12.01);
-    //scanf("%lf", &x);
+    printf("Enter x: ");
+    scanf("%lf", &x);
 
-    //printf("Hello World!!!\n");
+    printf("Enter y: ");
+    scanf("%lf", &y);
+
+    printf("f(%lf, %lf) = %lf\n", x, y, func(x, y));
     return 0;
 }
