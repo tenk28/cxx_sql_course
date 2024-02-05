@@ -1,16 +1,19 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <math.h>
 
-double func(double x) {
-    double result;
+bool func(double x, double* result) {
     if (x > 0 && x < 4) {
-        result = 4 - pow(x, 2);
+        *result = 4 - pow(x, 2);
     } else if (x == 0) {
-        result = 0;
+        *result = 0;
     } else if (x < 0) {
-        result = pow(x, 3);
+        *result = pow(x, 3);
+    } else {
+        return false;
     }
-    return result;
+
+    return true;
 }
 
 int main() {
@@ -19,6 +22,12 @@ int main() {
     printf("Enter x: ");
     scanf("%lf", &x);
 
-    printf("f(%.2lf) = %.2lf\n", x, func(x));
+    double result;
+    if(func(x, &result)) {
+        printf("f(%.2lf) = %.2lf\n", x, result);
+    } else {
+        printf("Argument %.2lf not valid\n", x);
+    }
+
     return 0;
 }

@@ -3,7 +3,7 @@ c: clean
 	./c
 
 cxx: clean
-	g++ main.cpp -o cxx
+	g++ main.cpp -std=c++17 -o cxx
 	./cxx
 
 python:
