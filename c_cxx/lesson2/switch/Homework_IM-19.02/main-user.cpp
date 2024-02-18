@@ -30,7 +30,7 @@ std::optional<std::string>printMonth(int number){
             break;
     }
     return result;
-    }
+}
 
 
 
@@ -40,11 +40,11 @@ int main(){
     std::cout << "Enter number of month:  ";
     std::cin >> number;
 
-    auto result = printMonth( number);
-    if (result.has_value()){
+    auto result = printMonth(number);
+    if (result.has_value()) {
         std::cout << "Result is " << result.value() << std::endl;
     } else {
-        std::cout << "Not Found";
+        std::cout << "Not Found"; << std::endl;
     }
     return 0;
 }

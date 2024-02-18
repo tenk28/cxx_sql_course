@@ -16,7 +16,7 @@ enum Months {
 };
 
 
-char printMonth(Months month){
+void printMonth(Months month){
     switch (month){
         case December:
         case January:
@@ -47,7 +47,7 @@ char printMonth(Months month){
 
 int main() {
 
-    std::cout << printMonth(December) ;
+    printMonth(December) ;
 
     return 0;
 }
