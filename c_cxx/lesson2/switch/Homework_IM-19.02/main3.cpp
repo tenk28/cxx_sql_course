@@ -42,7 +42,7 @@ std::optional<int>calculateGrade(int grade){
 
 }
 
-int main1() {
+int main() {
     int grade;
 
     std::cout << "Enter grade 1 - 12 :   ";
