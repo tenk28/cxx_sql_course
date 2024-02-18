@@ -44,7 +44,7 @@ int main(){
     if (result.has_value()) {
         std::cout << "Result is " << result.value() << std::endl;
     } else {
-        std::cout << "Not Found"; << std::endl;
+        std::cout << "Not Found" << std::endl;
     }
     return 0;
 }
