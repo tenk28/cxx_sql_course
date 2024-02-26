@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 int factorial_while(int value) {
     int fact = 1;
@@ -33,4 +33,3 @@ int main() {
 
     return 0;
 }
-*/
