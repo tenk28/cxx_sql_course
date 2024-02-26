@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 int sum(int n, int x){
     int sum = 0;
@@ -25,4 +25,4 @@ int main() {
     std::cout << " sum(n,x) = " << sum(n,x);
 
     return 0;
-}*/
+}
